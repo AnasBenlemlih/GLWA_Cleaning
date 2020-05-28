@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".ParamActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -41,52 +42,24 @@
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
                 >
-                    <LinearLayout
-                        android:id="@+id/tache"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:padding="16dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#fff">
-                        
-                        <ImageView
-                            android:src="@drawable/cal"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"/>
-                        <TextView
-                            android:layout_marginTop="12dp"
-                            android:textSize="18sp"
-                            android:text="TACHE"
-
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp"
-                >
                 <LinearLayout
+                    android:id="@+id/editPass"
                     android:orientation="vertical"
                     android:gravity="center"
                     android:padding="16dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:background="#fff">
 
                     <ImageView
-                        android:src="@drawable/sal"
+                        android:src="@drawable/ic_lock_password"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
                     <TextView
                         android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="ouvrier"
+                        android:textSize="15sp"
+                        android:text="Changer le \nmot de passe"
+                        android:textAlignment="center"
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
@@ -103,7 +76,6 @@
                 android:layout_margin="12dp"
                 >
                 <LinearLayout
-                    android:id="@+id/parametre"
                     android:orientation="vertical"
                     android:gravity="center"
                     android:padding="16dp"
@@ -111,49 +83,20 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/para"
+                        android:src="@drawable/ic_person_black_24dp"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
                     <TextView
                         android:layout_marginTop="12dp"
                         android:textSize="18sp"
-                        android:text="Parametre"
+                        android:text="Mon profile"
                         android:textColor="@color/colorBlue"
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp"
-                >
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="16dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
-                    <ImageView
-                        android:src="@drawable/exit"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
-                    <TextView
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="Quitter"
-                        android:textColor="@color/colorBlue"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
         </GridLayout>
 

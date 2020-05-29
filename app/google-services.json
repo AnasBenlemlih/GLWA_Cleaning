@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "713758730720",
+    "firebase_url": "https://glwacleaning-65c5a.firebaseio.com",
+    "project_id": "glwacleaning-65c5a",
+    "storage_bucket": "glwacleaning-65c5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713758730720:android:656cf2171312f86fc42385",
+        "android_client_info": {
+          "package_name": "com.dev.glwa_cleaning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713758730720-65jme19mg4pv9u7fn08r9jedodngo3eo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm-zaeuuzFXgrbl2_tYGnHzrsqvRbKJAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713758730720-65jme19mg4pv9u7fn08r9jedodngo3eo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

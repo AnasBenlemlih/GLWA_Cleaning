@@ -8,62 +8,140 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
         android:orientation="vertical"
-        android:layout_margin="20dp">
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/logo"
-            android:layout_gravity="center"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TACHE"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:textSize="35dp"
-            android:textColor="@color/colorBlue" />
-
-        <EditText
-            android:id="@+id/et-Email"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:inputType="text"
-            android:hint="Recherche"
-            android:textColorHint="@color/colorBlue"
-            android:drawableLeft="@drawable/ic_person_black_24dp"
-            android:drawablePadding="10dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/edit"
-            android:padding="20dp"
-
-            />
-
-       <CalendarView
-           android:layout_margin="10dp"
-           android:layout_width="match_parent"
-           android:layout_height="300dp" />
-
-        <Button
-            android:id="@+id/buttonRechercheTaches"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:text="Recherche"
-            android:textColor="#fff"
-            android:textSize="20dp"
-            android:background="@drawable/button"
-            android:layout_marginTop="20dp"
-            />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#fff">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/logo"
+                />
+        </RelativeLayout>
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+                <LinearLayout
+                    android:id="@+id/addtache"
+                    android:orientation="horizontal"
+                    android:layout_gravity="clip_horizontal"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:gravity="right"
+                        android:src="@drawable/ic_add"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:textSize="30sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Affecter une tâche"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity ="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+                <LinearLayout
+                    android:id="@+id/mestache"
+                    android:orientation="horizontal"
+                    android:layout_gravity="clip_horizontal"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:gravity="right"
+                        android:src="@drawable/ic_person_black_24dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:textSize="30sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Mes tâches"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity ="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+                <LinearLayout
+                    android:id="@+id/alltache"
+                    android:orientation="horizontal"
+                    android:layout_gravity="clip_horizontal"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:gravity="right"
+                        android:src="@drawable/ic_people_black_24dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <TextView
+                        android:textSize="30sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Tout les tâches"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity ="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
+
+        </GridLayout>
 
     </LinearLayout>
 

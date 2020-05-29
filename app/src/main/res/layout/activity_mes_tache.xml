@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MesTacheActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#fff">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/logo"
+                />
+        </RelativeLayout>
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes taches"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:textColor="@color/colorBlue" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="3"
+                android:layout_rowWeight="3"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="clip_horizontal"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff">
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="05/07/2020"
+                        android:textColor="#000"
+                        android:layout_gravity ="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textSize="30sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Immo-Casa"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity ="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="nettoyage à la désinsectisation"
+                        android:textColor="#000"
+                        android:layout_gravity ="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:text="valider"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:background="@drawable/button"
+                        android:layout_marginTop="20dp"
+
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="3"
+                android:layout_rowWeight="3"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="clip_horizontal"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff">
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="06/07/2020"
+                        android:textColor="#000"
+                        android:layout_gravity ="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textSize="30sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Data-Center"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity ="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="gardiennage"
+                        android:textColor="#000"
+                        android:layout_gravity ="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:text="valider"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:background="@drawable/button"
+                        android:layout_marginTop="20dp"
+
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="3"
+                android:layout_rowWeight="3"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+                <LinearLayout
+                    android:id="@+id/addtache"
+                    android:orientation="vertical"
+                    android:layout_gravity="clip_horizontal"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff">
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="08/07/2020"
+                        android:textColor="#000"
+                        android:layout_gravity ="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textSize="30sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Immo-Casa"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity ="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="nettoyage à la désinsectisation"
+                        android:textColor="#000"
+                        android:layout_gravity ="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:text="valider"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:background="@drawable/button"
+                        android:layout_marginTop="20dp"
+
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="3"
+                android:layout_rowWeight="3"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="clip_horizontal"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff">
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="09/07/2020"
+                        android:textColor="#000"
+                        android:layout_gravity ="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textSize="30sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Clinique Agdal"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity ="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:text="nettoyage à la désinsectisation"
+                        android:textColor="#000"
+                        android:layout_gravity ="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:text="valider"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:background="@drawable/button"
+                        android:layout_marginTop="20dp"
+
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

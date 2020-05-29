@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TacheActivity"></activity>
+        <activity android:name=".AllTachActivity"></activity>
+        <activity android:name=".MesTacheActivity" />
+        <activity android:name=".AddTacheeActivity" />
+        <activity android:name=".TacheActivity" />
         <activity android:name=".EditPasswordActivity" />
         <activity android:name=".ParamActivity" />
         <activity android:name=".HomeActivity" />

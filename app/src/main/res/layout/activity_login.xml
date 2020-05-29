@@ -29,7 +29,7 @@
             android:textColor="@color/colorBlue" />
 
         <EditText
-            android:id="@+id/et-Email"
+            android:id="@+id/Email"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

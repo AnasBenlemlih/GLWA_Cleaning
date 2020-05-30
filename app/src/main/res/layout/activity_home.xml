@@ -12,7 +12,6 @@
 
 
         <RelativeLayout
-
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="#fff">
@@ -23,7 +22,17 @@
                 android:src="@drawable/logo"
                 />
 
+
         </RelativeLayout>
+
+        <TextView
+            android:id="@+id/labelName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorBlue"
+            android:textSize="24sp" />
 
         <GridLayout
             android:columnCount="2"
@@ -32,6 +41,7 @@
             android:columnOrderPreserved="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
 
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
@@ -64,35 +74,8 @@
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
             </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp"
-                >
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="16dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
-                    <ImageView
-                        android:src="@drawable/sal"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
-                    <TextView
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="ouvrier"
 
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
@@ -156,40 +139,60 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/layoutOuvrier"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                >
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="16dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <ImageView
-                        android:src="@drawable/exit"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
-                    <TextView
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="déconnexion"
-                        android:textColor="@color/colorBlue"
+                        android:layout_height="80dp"
+                        android:src="@drawable/sal" />
 
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+
+                        android:text="ouvrier"
+                        android:textSize="18sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:text="SE DECONNECTER"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/buttondeconnecter"
+                />
         </GridLayout>
 
 
     </LinearLayout>
+
 
 
 
